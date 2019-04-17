@@ -1,0 +1,6 @@
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\Module 3\Module 3\bin\Debug\Module 3.exe.config
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\Module 3\Module 3\bin\Debug\Module 3.exe
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\Module 3\Module 3\bin\Debug\Module 3.pdb
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\Module 3\Module 3\obj\Debug\Module 3.csprojResolveAssemblyReference.cache
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\Module 3\Module 3\obj\Debug\Module 3.exe
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\Module 3\Module 3\obj\Debug\Module 3.pdb
