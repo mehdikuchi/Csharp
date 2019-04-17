@@ -1,0 +1,6 @@
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\Module 8\Module 8\bin\Debug\Module 8.exe.config
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\Module 8\Module 8\obj\Debug\Module 8.csprojResolveAssemblyReference.cache
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\Module 8\Module 8\bin\Debug\Module 8.exe
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\Module 8\Module 8\bin\Debug\Module 8.pdb
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\Module 8\Module 8\obj\Debug\Module 8.exe
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\Module 8\Module 8\obj\Debug\Module 8.pdb

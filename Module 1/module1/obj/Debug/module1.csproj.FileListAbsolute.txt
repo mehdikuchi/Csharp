@@ -1,0 +1,6 @@
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\module1\module1\bin\Debug\module1.exe.config
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\module1\module1\bin\Debug\module1.exe
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\module1\module1\bin\Debug\module1.pdb
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\module1\module1\obj\Debug\module1.exe
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\module1\module1\obj\Debug\module1.pdb
+E:\eng softwares\Designs\Visual Studio projects\C#\EDX\module1\module1\obj\Debug\module1.csprojResolveAssemblyReference.cache
