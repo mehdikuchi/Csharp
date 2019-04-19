@@ -7,6 +7,7 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Popups;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
@@ -23,6 +24,7 @@ namespace App2
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private MessageDialog message;
         public MainPage()
         {
             this.InitializeComponent();
@@ -36,22 +38,32 @@ namespace App2
         //    mediaElement.SetSource(stream, stream.ContentType);
         //    mediaElement.Play();
         //    this.button.Content = "Clicked";
-            
-           
+
+
         //}        
 
         private void Surname_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+
         }
 
         private void Name_TextChanged(object sender, TextChangedEventArgs e)
-        {            
+        {
         }
 
-        private void submit_clicked(object sender, RoutedEventArgs e)
+        private async void submit_clicked(object sender, RoutedEventArgs e)
         {
-
+            if (this.Name.Text.Equals("") || this.Surname.Text.Equals("") || this.Salary.Text.Equals("") ||
+                this.Bonus.Text.Equals("") || this.Category.Text.Equals(""))
+            {
+                message = new MessageDialog("Please Fill in all the fields");
+                await message.ShowAsync();
+            }
+            else
+            {
+                message = new MessageDialog("The data is saved");
+                await message.ShowAsync();
+            }
         }
         
 
