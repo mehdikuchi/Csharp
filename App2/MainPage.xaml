@@ -7,8 +7,18 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Button HorizontalAlignment="Center" Height="360" VerticalAlignment="Center" Width="640">
+        <Grid Margin="-121,-148,0,0" RenderTransformOrigin="0.494,0.502" HorizontalAlignment="Left" Width="512">
+            <Button x:Name="button" Click="Button_Click" Content="Hello World" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.302,-0.787"/>
+            <Button x:Name="clk" Holding="Holder" DoubleTapped="clk_holded" Click="clk_clicked" Content="Hi" HorizontalAlignment="Left" Margin="42,57,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.554,0.594"/>
+            <ListView x:Name="first" Height="80" Margin="266,0,0,0" VerticalAlignment="Top" RequestedTheme="Light" Canvas.ZIndex="1" HorizontalAlignment="Stretch">
+                <TextBox x:Name="Name" KeyDown="Enter" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" FontFamily="B Nazanin" RequestedTheme="Default" InputScope="PersonalFullName" PlaceholderText="نام خانوادگی و نام" AutomationProperties.IsRequiredForForm="True"/>
+            </ListView>
 
-    <Grid>
+        </Grid>
+    </Button>
 
-    </Grid>
+
+
+
 </Page>

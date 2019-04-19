@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace App2
@@ -26,5 +27,48 @@ namespace App2
         {
             this.InitializeComponent();
         }
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MediaElement mediaElement = new MediaElement();
+            var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
+            Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync("Hello, World!");
+            mediaElement.SetSource(stream, stream.ContentType);
+            mediaElement.Play();
+            this.button.Content = "Clicked";
+            
+           
+        }
+        private void clk_clicked(object sender,RoutedEventArgs e)
+        {
+            this.clk.Content = "Clicked";            
+        }       
+
+        private void clk_holded(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            this.clk.Content = "Double clicked";
+        }
+
+        private void Holder(object sender, HoldingRoutedEventArgs e)
+        {
+            this.clk.Content = "Holded";
+        }
+
+        private void Enter(object sender, KeyRoutedEventArgs e)
+        {
+            this.clk.Content = e.DeviceId;
+        }
+
+        //private void getName(UIElement sender, CharacterReceivedRoutedEventArgs args)
+        //{
+        //    if (this.Name.Text.Equals("")) {
+        //        this.clk.Content="Please Fill in the from";
+        //        return;
+        //    }
+
+
+        //}
+
+
     }
 }
