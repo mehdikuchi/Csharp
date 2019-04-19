@@ -59,6 +59,11 @@ namespace App2
             this.clk.Content = e.DeviceId;
         }
 
+        private void Surname_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
         //private void getName(UIElement sender, CharacterReceivedRoutedEventArgs args)
         //{
         //    if (this.Name.Text.Equals("")) {

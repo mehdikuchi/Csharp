@@ -8,12 +8,21 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Button HorizontalAlignment="Center" Height="360" VerticalAlignment="Center" Width="640">
-        <Grid Margin="-121,-148,0,0" RenderTransformOrigin="0.494,0.502" HorizontalAlignment="Left" Width="512">
-            <Button x:Name="button" Click="Button_Click" Content="Hello World" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.302,-0.787"/>
-            <Button x:Name="clk" Holding="Holder" DoubleTapped="clk_holded" Click="clk_clicked" Content="Hi" HorizontalAlignment="Left" Margin="42,57,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.554,0.594"/>
-            <ListView x:Name="first" Height="80" Margin="266,0,0,0" VerticalAlignment="Top" RequestedTheme="Light" Canvas.ZIndex="1" HorizontalAlignment="Stretch">
-                <TextBox x:Name="Name" KeyDown="Enter" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" FontFamily="B Nazanin" RequestedTheme="Default" InputScope="PersonalFullName" PlaceholderText="نام خانوادگی و نام" AutomationProperties.IsRequiredForForm="True"/>
-            </ListView>
+        <Grid Margin="-121,-135,0,0" RenderTransformOrigin="0.494,0.502" HorizontalAlignment="Left" Width="512" VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="23*"/>
+                <RowDefinition Height="22*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="343*"/>
+                <ColumnDefinition Width="104*"/>
+                <ColumnDefinition Width="65*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="button" Click="Button_Click" Content="Hello World" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.302,-0.787" Height="32" Width="99"/>
+            <Button x:Name="clk" Holding="Holder" DoubleTapped="clk_holded" Click="clk_clicked" Content="Hi" HorizontalAlignment="Left" Margin="42,57,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.554,0.594" Height="32" Width="35" Grid.RowSpan="2"/>
+            <TextBox x:Name="Name" Grid.Column="2" HorizontalAlignment="Center" Margin="0,10,0,0" Text="" VerticalAlignment="Top" FontFamily="B Nazanin" PlaceholderText="نام"/>
+            <TextBox x:Name="Surname" Grid.Column="1" HorizontalAlignment="Left" Margin="24,10,0,0" Text="" VerticalAlignment="Top" PlaceholderText="نام خانوادگی" FontFamily="B Nazanin" TextChanged="Surname_TextChanged"/>
+
 
         </Grid>
     </Button>
