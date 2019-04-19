@@ -8,20 +8,24 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Button HorizontalAlignment="Center" Height="360" VerticalAlignment="Center" Width="640">
-        <Grid Margin="-121,-135,0,0" RenderTransformOrigin="0.494,0.502" HorizontalAlignment="Left" Width="512" VerticalAlignment="Stretch">
+        <Grid Margin="0,0,0,0" RenderTransformOrigin="0,0" HorizontalAlignment="Center" Width="512" Height="128" VerticalAlignment="Center">
             <Grid.RowDefinitions>
                 <RowDefinition Height="23*"/>
                 <RowDefinition Height="22*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="343*"/>
-                <ColumnDefinition Width="104*"/>
-                <ColumnDefinition Width="65*"/>
+                <ColumnDefinition Width="112*"/>
+                <ColumnDefinition Width="112*"/>
+                <ColumnDefinition Width="112*"/>
+                <ColumnDefinition Width="112*"/>
+                <ColumnDefinition Width="112*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="button" Click="Button_Click" Content="Hello World" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.302,-0.787" Height="32" Width="99"/>
-            <Button x:Name="clk" Holding="Holder" DoubleTapped="clk_holded" Click="clk_clicked" Content="Hi" HorizontalAlignment="Left" Margin="42,57,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.554,0.594" Height="32" Width="35" Grid.RowSpan="2"/>
-            <TextBox x:Name="Name" Grid.Column="2" HorizontalAlignment="Center" Margin="0,10,0,0" Text="" VerticalAlignment="Top" FontFamily="B Nazanin" PlaceholderText="نام"/>
-            <TextBox x:Name="Surname" Grid.Column="1" HorizontalAlignment="Left" Margin="24,10,0,0" Text="" VerticalAlignment="Top" PlaceholderText="نام خانوادگی" FontFamily="B Nazanin" TextChanged="Surname_TextChanged"/>
+            <Button x:Name="clk" Click="submit_clicked" Content="تأیید و ذخیره" FontFamily="B Nazanin" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="55" Width="100" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="1"/>
+            <TextBox x:Name="Name" Grid.Column="4" HorizontalAlignment="Left" Margin="17,10,0,0" Text="" VerticalAlignment="Top" FontFamily="B Nazanin" TextChanged="Name_TextChanged" PlaceholderText="نام" Height="35" Width="64"/>
+            <TextBox x:Name="Surname" Grid.Column="3" HorizontalAlignment="Left" Margin="24,10,0,0" Text="" VerticalAlignment="Top" PlaceholderText="نام خانوادگی" FontFamily="B Nazanin" TextChanged="Surname_TextChanged" CharacterSpacing="1" Height="35" Width="78" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="Salary" HorizontalAlignment="Left" Margin="17,10,0,0" PlaceholderText="حقوق" FontFamily="B Nazanin" VerticalAlignment="Top" Height="32" Width="70" Grid.Column="2"/>
+            <TextBox x:Name="Bonus" HorizontalAlignment="Left" Margin="17,10,0,0" PlaceholderText="پاداش" FontFamily="B Nazanin" VerticalAlignment="Top" Height="32" Width="70" Grid.Column="1"/>
+            <TextBox x:Name="Category" HorizontalAlignment="Left" Margin="17,10,0,0" PlaceholderText="رده" FontFamily="B Nazanin" VerticalAlignment="Top" Height="32" Width="70"/>
 
 
         </Grid>
